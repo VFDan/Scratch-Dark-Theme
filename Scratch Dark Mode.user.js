@@ -99,4 +99,7 @@ function addGlobalStyle(css) {
     addGlobalStyle('#body{ text-shadow: none !important; }');
 
     addGlobalStyle('p, .thumbnail-loves {color: #ffecbe !important}');
+
+    //messages
+    addGlobalStyle('.messages .messages-social-list .social-message {background-color: #060511}')
 })();
