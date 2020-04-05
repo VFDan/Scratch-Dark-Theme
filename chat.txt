@@ -6,3 +6,4 @@ VFDan - Any other chat application? It would be much easier to do it in a chat a
 VFDan - Sure.
 MiniCoder11 - Unless you want to use Scratch chat? I get live notifications through an external website whenever I get a message.
 VFDan - Is it ScratchNotifier.cf? :) Anyway, I guess so, why not? Where should we put the chat?
+MiniCoder11 - It is indeed! We could also use the GitHub teams function but we would have to set up an organization. Let's put the chat in a studio?
