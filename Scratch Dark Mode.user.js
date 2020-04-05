@@ -12,7 +12,7 @@
 // @grant        none
 // ==/UserScript==
 
-//Thanks to Scratch user 44D3A7HQ for the code off which we have based the main editor color scheme and styling. Their previous work is greatly appreciated.
+//Thanks to Scratch user 44D3A7HQ for the code off of which we have based the main editor color scheme and styling. Their previous work is greatly appreciated.
 
 (function() {
     'use strict';
