@@ -1,11 +1,2 @@
-VFDan - We can chat with this file.
-VFDan - Do you have Discord? It might be easier to chat there.
-MiniCoder11 - Can't do Discord. How should we start this project?
-MiniCoder11 - Should I create plan.txt with a to do list?
-VFDan - Any other chat application? It would be much easier to do it in a chat application, as it would be real time, and we don't have to keep refreshing.
-VFDan - Sure.
-MiniCoder11 - Unless you want to use Scratch chat? I get live notifications through an external website whenever I get a message.
-VFDan - Is it ScratchNotifier.cf? :) Anyway, I guess so, why not? Where should we put the chat?
-MiniCoder11 - It is indeed! We could also use the GitHub teams function but we would have to set up an organization. Let's put the chat in a studio?
-VFDan - I think Github Teams would be better actually, since it is live, and you get a notification on the top right. I've downloaded an extension that notifies you when you get a notification on Github, regardless if it's open or not.
-VFDan - Besides, it would give more credit to you :)
+<Truncated>
+MiniCoder11 - I don't care about extra credit but we also could just comment on this commit down below? I just finished working out the color scheme for the editor and project page. We need to find a way to edit the class: mainBlocklyBackdrop. It will likely require a local override. Can we create those with Tampermonkey?
