@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Scratch Dark Mode
 // @namespace    http://tampermonkey.net/
-// @version      0.2
+// @version      0.3
 // @description  Gives the Scratch user interface a dark theme.
 // @author       MiniCoder11 & VFDan
 // @match        https://scratch.mit.edu/*
@@ -12,7 +12,7 @@
 // @grant        none
 // ==/UserScript==
 
-//Thanks to Scratch user 44D3A7HQ for the code off of which we have based the main editor color scheme and styling. Their previous work is greatly appreciated.
+//Thanks to Scratch user 44D3A7HQ for the code off which we have based the main editor color scheme and styling. Their previous work is greatly appreciated.
 
 (function() {
     'use strict';
@@ -91,8 +91,9 @@ function addGlobalStyle(css) {
     addGlobalStyle('.box .box-header h4, .box .box-header h5{ color: #FFFFFF !important; }');
     addGlobalStyle('.intro-banner .intro-container{ background-color: #253142 !important; }');
     addGlobalStyle('.intro-banner .intro-subnav{ background-color: #212c3c !important; }');
-    addGlobalStyle('.intro-banner .intro-button{ background-color: #31425b !important; }'); //h1, h2, h3, h4, h5, p
+    addGlobalStyle('.intro-banner .intro-button, .button.white{ background-color: #31425b !important; }'); //h1, h2, h3, h4, h5, p
     addGlobalStyle('#donor{ background-color: #212c3c !important; }');
+    addGlobalStyle('.dropdown, .dropdown.with-arrow::before{ background-color: #19283c !important; }');
 
     addGlobalStyle('#body{ color: #FFFFFF !important; }');
     addGlobalStyle('#body{ text-shadow: none !important; }');
