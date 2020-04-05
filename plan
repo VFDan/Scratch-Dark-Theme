@@ -1,9 +1,15 @@
 Plan:
- • Create name for userscript
+
+ • Create name for userscript: 
+
  • Choose colors for...
-   - Text
-   - Menu
-   - Accent
-   - Buttons
-   - Icons
-   - Main
+   - Text: 
+   - Menu: 
+   - Accent: 
+   - Buttons: 
+   - Icons: 
+   - Main: 
+
+Note: Please only use hex color codes to maintain consistency!
+
+You can edit this file and replace the blanks to fill in the plan.
