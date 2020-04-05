@@ -101,5 +101,6 @@ function addGlobalStyle(css) {
     addGlobalStyle('p, .thumbnail-loves {color: #ffecbe !important}');
 
     //messages
-    addGlobalStyle('.messages .messages-social-list .social-message {background-color: #060511}')
+    addGlobalStyle('.messages .social-message {background-color: #1f1f22 !important}');
+    addGlobalStyle('.messages .social-message .mod-comment {color: black !important}');
 })();
