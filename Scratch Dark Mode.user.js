@@ -98,5 +98,5 @@ function addGlobalStyle(css) {
     addGlobalStyle('#body{ color: #FFFFFF !important; }');
     addGlobalStyle('#body{ text-shadow: none !important; }');
 
-
+    addGlobalStyle('p{color: #ffecbe !important}');
 })();
