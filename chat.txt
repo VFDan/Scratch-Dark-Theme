@@ -4,3 +4,4 @@ MiniCoder11 - Can't do Discord. How should we start this project?
 MiniCoder11 - Should I create plan.txt with a to do list?
 VFDan - Any other chat application? It would be much easier to do it in a chat application, as it would be real time, and we don't have to keep refreshing.
 VFDan - Sure.
+MiniCoder11 - Unless you want to use Scratch chat? I get live notifications through an external website whenever I get a message.
