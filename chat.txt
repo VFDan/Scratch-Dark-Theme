@@ -7,3 +7,5 @@ VFDan - Sure.
 MiniCoder11 - Unless you want to use Scratch chat? I get live notifications through an external website whenever I get a message.
 VFDan - Is it ScratchNotifier.cf? :) Anyway, I guess so, why not? Where should we put the chat?
 MiniCoder11 - It is indeed! We could also use the GitHub teams function but we would have to set up an organization. Let's put the chat in a studio?
+VFDan - I think Github Teams would be better actually, since it is live, and you get a notification on the top right. I've downloaded an extension that notifies you when you get a notification on Github, regardless if it's open or not.
+VFDan - Besides, it would give more credit to you :)
