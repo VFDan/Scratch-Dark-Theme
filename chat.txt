@@ -1,2 +1,0 @@
-<Truncated>
-MiniCoder11 - I don't care about extra credit but we also could just comment on this commit down below? I just finished working out the color scheme for the editor and project page. We need to find a way to edit the class: mainBlocklyBackdrop. It will likely require a local override. Can we create those with Tampermonkey?
