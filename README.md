@@ -12,9 +12,18 @@ ___
 Thanks to Scratch user **44D3A7HQ** for the `addGlobalStyle` function and inspiration for the color scheme. They are not a member of the official development team but their work is greatly appreciated.
 ___
 ## Change log:
-**Version 0.5 (Latest)**
+**Version 0.6 (Latest)**
   
-  Version 0.4 adds support for the following pages:
+  Version 0.6 adds support for the following pages:
+  * Project Pages
+  * Messages (Improved)
+  * Editor (BETA)
+  
+  Version 0.5 also fixes several formatting and styling issues. This release also supports the latest version of Tampermonkey.
+___
+**Version 0.5**
+  
+  Version 0.5 adds support for the following pages:
   * Explore
   * Messages (Improved)
   
