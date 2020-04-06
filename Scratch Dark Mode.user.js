@@ -1,9 +1,9 @@
 // ==UserScript==
 // @name         Scratch Dark Mode
 // @namespace    http://tampermonkey.net/
-// @version      0.5
+// @version      0.6
 // @description  Gives the Scratch user interface a dark theme.
-// @author       MiniCoder11 & VFDan
+// @author       MiniCoder11 & VFDan (This version's scripting was written by MiniCoder11)
 // @match        https://scratch.mit.edu/*
 // @grant        none
 // ==/UserScript==
@@ -59,21 +59,23 @@
     addGlobalStyle('.blocklyScrollbarHandle { fill: #333333AA; !important;');
 
     //Player
-    addGlobalStyle('.inplace-textarea{ background-color: #333333 !important; }');
-    addGlobalStyle('.preview .project-description{ background-color: #333333 !important; }');
-    addGlobalStyle('.preview .project-description{ color: #FFFFFF !important; }');
-    addGlobalStyle('.inplace-textarea{ color: #FFFFFF !important; }');
-    addGlobalStyle('.inplace-input{ background-color: #333333 !important; }');
-    addGlobalStyle('.inplace-input{ color: #FFFFFF !important; }');
+    addGlobalStyle('body{color: cdcdcd !important}');
+    addGlobalStyle('view, .preview .project-lower-container{ background-color: #172033 !important;}');
+    addGlobalStyle('.inplace-textarea{ background-color: #2a364d !important; }');
+    addGlobalStyle('.preview .project-description{ background-color: #2a364d !important; }');
+    addGlobalStyle('.preview .project-description{ color: #cdcdcd !important; }');
+    addGlobalStyle('.inplace-textarea{ color: #cdcdcd !important; }');
+    addGlobalStyle('.inplace-input{ background-color: #2a364d !important; }');
+    addGlobalStyle('.inplace-input{ color: #cdcdcd !important; }');
 
-    addGlobalStyle('.comment .comment-body .comment-bubble{ background-color: #333333 !important; }');
-    addGlobalStyle('.comment .comment-body .comment-bubble::before{ background-color: #333333 !important; }');
-    addGlobalStyle('.comment .comment-body .comment-bubble{ color: #FFFFFF !important; }');
-    addGlobalStyle('.preview .project-lower-container{ background-color: #292929 !important; }');
-    addGlobalStyle('.preview .comments-header{ color: #FFFFFF !important; }');
-    addGlobalStyle('.preview .comments-header h4{ color: #FFFFFF !important; }');
-    addGlobalStyle('.compose-comment .compose-bottom-row .compose-limit{ color: #FFFFFF !important; }');
-    addGlobalStyle('.comment .action-list{ color: #FFFFFF !important; }');
+    addGlobalStyle('.comment .comment-body .comment-bubble{ background-color: #2a364d !important; }');
+    addGlobalStyle('.comment .comment-body .comment-bubble::before{ background-color: #2a364d !important; }');
+    addGlobalStyle('.comment .comment-body .comment-bubble{ color: #cdcdcd !important; }');
+    //addGlobalStyle('.preview .project-lower-container{ background-color: # !important; }');
+    addGlobalStyle('.preview .comments-header{ color: #cdcdcd !important; }');
+    addGlobalStyle('.preview .comments-header h4{ color: #cdcdcd !important; }');
+    addGlobalStyle('.compose-comment .compose-bottom-row .compose-limit{ color: #cdcdcd !important; }');
+    addGlobalStyle('.comment .action-list{ color: #cdcdcd !important; }');
     addGlobalStyle('.replies.collapsed > .comment:last-of-type::after{ background: linear-gradient(rgba(29, 29, 29, 0), #292929); }');
 
     //website
@@ -105,7 +107,8 @@
 
         addGlobalStyle('.activity-img{ padding: 0px; margin: 0px 13.25px 0px 0px; border-radius: 10px !important; }');
         addGlobalStyle('#navigation .link > a{ transition: all 0.25s !important; }');
-        addGlobalStyle('.box .box-content{ height: 270px; !important; }');
+        //addGlobalStyle('.box .box-content{ height: 270px; !important; }'); Whether or not this style should be left in may be debated.
+        addGlobalStyle('.box .box-header h4, .box .box-header h5{ padding-top: 8px !important; }');
 
     }
 
