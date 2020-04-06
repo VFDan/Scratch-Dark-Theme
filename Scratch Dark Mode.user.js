@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Scratch Dark Mode
 // @namespace    http://tampermonkey.net/
-// @version      0.4
+// @version      0.5
 // @description  Gives the Scratch user interface a dark theme.
 // @author       MiniCoder11 & VFDan
 // @match        https://scratch.mit.edu/*
@@ -81,7 +81,7 @@
     addGlobalStyle('#view{ background-color: #253142 !important; }'); //Backdrop
     addGlobalStyle('#footer{ background-color: #212c3c !important; }'); //Footer
     addGlobalStyle('#navigation{ background-color: #19283c !important; }'); //Menu bar navigation
-    addGlobalStyle('#body{ text-shadow: none !important; }'); //Removes text shadow for dark theme
+    addGlobalStyle('body{ text-shadow: none !important; }'); //Removes text shadow for dark theme
 
     if (url == "https://scratch.mit.edu" || url == "https://scratch.mit.edu/") {
 
@@ -96,9 +96,10 @@
         addGlobalStyle('.box .box-header h4, .box .box-header h5{ color: #FFFFFF !important; }');
         addGlobalStyle('.intro-banner .intro-container{ background-color: #253142 !important; }');
         addGlobalStyle('.intro-banner .intro-subnav{ background-color: #212c3c !important; }');
-        addGlobalStyle('.intro-banner .intro-button, .button.white{ background-color: #31425b !important; }');
+        addGlobalStyle('.intro-banner .intro-button, .button.white{ background-color: #31425b; }');
         addGlobalStyle('#donor{ background-color: #212c3c !important; }');
-        addGlobalStyle('.dropdown, .dropdown.with-arrow::before{ background-color: #19283c !important; }');
+        addGlobalStyle('.dropdown, .dropdown.with-arrow::before, .dropdown, .dropdown.open, .dropdown.production.open{ background-color: #19283c !important; }');
+
         addGlobalStyle('body, p{ color: #c8c8c8 !important; }');
         addGlobalStyle('body{ text-shadow: none !important; }');
 
@@ -119,14 +120,20 @@
 
     }
 
-    //Messages
+    //Messages and Explore
 
-    if (url.includes("scratch.mit.edu/messages")) {
+    if (url.includes("scratch.mit.edu/messages") || url.includes("scratch.mit.edu/explore")) {
 
         addGlobalStyle('.social-message{ margin: 10px; border: none; padding: 10px; background-color: #323c4c; border-radius: 12px !important; }');
         addGlobalStyle('.messages-social-list{ background-color: transparent; border: none !important; }');
-        addGlobalStyle('.title-banner.mod-messages{ background-color: #31425b !important; }');
+        addGlobalStyle('.title-banner.mod-messages, .outer .title-banner.masthead{ background-color: #31425b !important; }');
         addGlobalStyle('.activity-li{ color: #9BA8BA !important; }');
+        addGlobalStyle('body, h1, h2, h3, p{ color: #dbdbdb !important; }');
+        addGlobalStyle('.comment-text::before, .comment-text::after, .comment-text{ border-color: #3c485b; background-color: #3c485b !important; }');
+        addGlobalStyle('.outer #projectBox{ background-color: #253142 !important; }');
+        addGlobalStyle('.tabs, .tab-background{ background-color: #31425b; !important; }');
+        addGlobalStyle('.tabs li:hover{ background-color: #2c3c53; !important; }');
+        addGlobalStyle('.grid .thumbnail{ background-color: #2c3c53; !important; }');
 
     }
 
