@@ -167,7 +167,8 @@
         addGlobalStyle('.tabs, .tab-background{ background-color: #31425b; !important; }');
         addGlobalStyle('.tabs li:hover{ background-color: #2c3c53; !important; }');
         addGlobalStyle('.grid .thumbnail{ background-color: #2c3c53; !important; }');
-
+        document.querySelector('.select select').style = 'background-color: #19283c';
+        addGlobalStyle('option {background-color: #253142!important}');
     }
 
 })();
