@@ -15,14 +15,16 @@ ___
 Thanks to Scratch user **44D3A7HQ** for the `addGlobalStyle` function and inspiration for the color scheme. They are not a member of the official development team but their work is greatly appreciated.
 ___
 ## Change log:
-**Version 0.9 (Latest)**
+**Version 0.9.4 (Latest)**
   
-  Version 0.9 adds support for the following pages:
+  Version 0.9.4 adds support for the following pages:
   * Project Pages (Improved)
   * Messages (Improved)
   * Editor
+  * Ideas
+  * About
   
-  Version 0.9 also fixes several formatting and styling issues. This release also supports the latest version of Tampermonkey.
+  Version 0.9.4 also fixes several formatting and styling issues as well as providing a universal color scheme for parts of Scratch it doesn't support (excluding Studio, My Stuff, and Profile pages which will be recieving full custom pages by version 1.0). This release also supports the latest version of Tampermonkey.
 ___
 **Version 0.6**
   
