@@ -7,22 +7,31 @@ Supported pages so far:
   * scratch.mit.edu/messages
   * scratch.mit.edu/explore
   * scratch.mit.edu/search
-  * scratch.mit.edu/projects (Beta)
-  * scratch.mit.edu/editor (Beta)
+  * scratch.mit.edu/projects
+  * scratch.mit.edu/editor
 ___
 ## Credits:
 
 Thanks to Scratch user **44D3A7HQ** for the `addGlobalStyle` function and inspiration for the color scheme. They are not a member of the official development team but their work is greatly appreciated.
 ___
 ## Change log:
-**Version 0.6 (Latest)**
+**Version 0.9 (Latest)**
+  
+  Version 0.9 adds support for the following pages:
+  * Project Pages (Improved)
+  * Messages (Improved)
+  * Editor
+  
+  Version 0.9 also fixes several formatting and styling issues. This release also supports the latest version of Tampermonkey.
+___
+**Version 0.6**
   
   Version 0.6 adds support for the following pages:
   * Project Pages
   * Messages (Improved)
   * Editor (BETA)
   
-  Version 0.5 also fixes several formatting and styling issues. This release also supports the latest version of Tampermonkey.
+  Version 0.6 also fixes several formatting and styling issues. This release also supports the latest version of Tampermonkey.
 ___
 **Version 0.5**
   
