@@ -5,6 +5,8 @@
 // @description  Gives the Scratch user interface a dark theme.
 // @author       MiniCoder11 & VFDan (This version's scripting was written by MiniCoder11)
 // @match        https://scratch.mit.edu/*
+// @exclude      https://scratch.mit.edu/join
+// @exclude      https://scratch.mit.edu/accounts/*
 // @grant        none
 // ==/UserScript==
 
@@ -111,6 +113,7 @@
     addGlobalStyle('h1, h2, h3, h4, h5, h6, p{ color: #f1f1f1;}');
     addGlobalStyle('.modal-overlay{ background-color: #070c12de;}');
     addGlobalStyle('.ttt-tile{ background-color: #2c3c53;}');
+    addGlobalStyle('.dropdown, .dropdown.with-arrow::before{ background-color: #19283c !important; }');
 
     if (url == "https://scratch.mit.edu" || url == "https://scratch.mit.edu/") {
 
@@ -164,7 +167,6 @@
         addGlobalStyle('.tabs, .tab-background{ background-color: #31425b; !important; }');
         addGlobalStyle('.tabs li:hover{ background-color: #2c3c53; !important; }');
         addGlobalStyle('.grid .thumbnail{ background-color: #2c3c53; !important; }');
-        addGlobalStyle('.dropdown{ background-color: #19283c !important; }');
 
     }
 
