@@ -24,6 +24,8 @@ ___
   * Ideas
   * About
   
+As a new privacy patch, this userstyle will not be applied on any page where personal information such as email addresses are given (including the account managment and Join Scratch pages).  
+  
   Version 0.9.4 also fixes several formatting and styling issues as well as providing a universal color scheme for parts of Scratch it doesn't support (excluding Studio, My Stuff, and Profile pages which will be recieving full custom pages by version 1.0). This release also supports the latest version of Tampermonkey.
 ___
 **Version 0.6**
