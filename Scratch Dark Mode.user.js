@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Scratch Dark Mode
 // @namespace    http://tampermonkey.net/
-// @version      0.9
+// @version      0.9.4
 // @description  Gives the Scratch user interface a dark theme.
 // @author       MiniCoder11 & VFDan (This version's scripting was written by MiniCoder11)
 // @match        https://scratch.mit.edu/*
@@ -102,11 +102,15 @@
 
     //website
 
-    addGlobalStyle('#view{ background-color: #253142 !important; }'); //Backdrop
+    addGlobalStyle('.banner-wrapper, .tips-getting-started, .gray-area, .tips-activity-guides, #view{ background-color: #253142 !important; }'); //Backdrop
     addGlobalStyle('#footer{ background-color: #212c3c !important; }'); //Footer
-    addGlobalStyle('#navigation, .stage-header_stage-header-wrapper-overlay_5vfJa, .menu-bar_menu-bar_JcuHF, .modal_header_1h7ps{ background-color: #19283c !important; }'); //Menu bar navigation. Stage header
-    addGlobalStyle('body{ text-shadow: none !important; }'); //Removes text shadow for dark theme                                                                            //has been attached here for added
-    addGlobalStyle('*{ transition: all 0.25s !important; }');//                                                                                                              //convenience and efficiency.
+    addGlobalStyle('#navigation, .ttt-modal-header, .modal-content, .stage-header_stage-header-wrapper-overlay_5vfJa, .menu-bar_menu-bar_JcuHF, .modal_header_1h7ps{ background-color: #19283c !important; }');
+    addGlobalStyle('body{ text-shadow: none !important; }'); //Removes text shadow for dark theme
+    addGlobalStyle('*{ transition: all 0.25s !important; }');
+    addGlobalStyle('.about .body{ background: #344562; border: none;}');
+    addGlobalStyle('h1, h2, h3, h4, h5, h6, p{ color: #f1f1f1;}');
+    addGlobalStyle('.modal-overlay{ background-color: #070c12de;}');
+    addGlobalStyle('.ttt-tile{ background-color: #2c3c53;}');
 
     if (url == "https://scratch.mit.edu" || url == "https://scratch.mit.edu/") {
 
