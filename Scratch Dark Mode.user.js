@@ -170,7 +170,7 @@
 
     }
 
-    if (url.includes("scratch.mit.edu/users") || url.includes("scratch.mit.edu/mystuff") || url.includes("scratch.mit.edu/studios") || url.includes("scratch.mit.edu/cloudmonitor")) {
+    if (url.includes("scratch.mit.edu/users") || url.includes("scratch.mit.edu/mystuff") || url.includes("scratch.mit.edu/studios") || url.includes("scratch.mit.edu/cloudmonitor") || url.includes("scratch.mit.edu/discuss")) {
 
         addGlobalStyle('#topnav, .banner, #topnav .innerwrap{ display: block; position: fixed; top: 0; left: 0; z-index: 10; border-bottom: 1px solid rgba(0, 0, 0, 0.1); box-shadow: 0 0 3px rgba(0, 0, 0, 0.25); background-color: #19283c; width: 100%; height: 50px; }');
         addGlobalStyle('#topnav .logo span{ background-image: url(https://scratch.mit.edu/images/logo_sm.png); display: block; margin: 0 6px 0 0; border: 0; background-repeat: no-repeat; background-position: center center; background-size: 95%; width: 81px; height: 50px !important; }');
@@ -182,6 +182,7 @@
         if (!url.includes("mystuff")) {
 
             addGlobalStyle('.empty-field, #profile-data .footer, #profile-box .doing, .box .box-head, .box, .box .box-content, .box .box-content .inner{ background-color: #31425b; border: none; border-radius: 10px }');
+            addGlobalStyle('.blockpost div.box, .postfootleft p, .postfootright ul, .postfootright div, .blockpost .box-content, .postfootright, .postright, .postleft, .postfootleft, .blockpost label{ background-color: #31425b !important; border: none; }');
 
         } else {
 
@@ -224,6 +225,7 @@
         addGlobalStyle('#explore-bar #explore-header, ul.curators li, #explore-bar #related-projects{ background: #253142 !important; border-radius: 10px;}');
         addGlobalStyle('.table-striped tbody > tr:nth-child(2n+1) > td, .table-striped tbody > tr:nth-child(2n+1) > th, .notification-feed li{ background-color: #253142; margin-bottom: 10px; border-radius: 10px;;}');
         addGlobalStyle('select{ color: black !important;}')
+        addGlobalStyle('.djangobb blockquote{ background: #465975; border-radius: 10px;}')
 
     }
 
