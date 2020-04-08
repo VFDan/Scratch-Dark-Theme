@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Scratch Dark Mode
 // @namespace    http://tampermonkey.net/
-// @version      1.0.1
+// @version      1.0.4
 // @description  Gives the Scratch user interface a dark theme.
 // @author       MiniCoder11 & VFDan (This version's scripting was written by MiniCoder11)
 // @match        https://scratch.mit.edu/*
@@ -114,6 +114,8 @@
     addGlobalStyle('.modal-overlay{ background-color: #070c12de;}');
     addGlobalStyle('.ttt-tile{ background-color: #2c3c53;}');
     addGlobalStyle('#topnav ul.account-nav .logged-in-user .dropdown-menu, .dropdown, .dropdown.with-arrow::before{ box-shadow: none; background-color: #19283c !important; }');
+    addGlobalStyle('.credits .supporters, .parents .title-banner.faq-banner, .developers .title-banner.faq-banner{ background-color: #2b3a4f !important; }');
+    addGlobalStyle('.parents .title-banner.masthead, .developers .title-banner.masthead{ background-color: #2e3d51 !important; }');
 
     if (url == "https://scratch.mit.edu" || url == "https://scratch.mit.edu/") {
 
@@ -141,9 +143,7 @@
         addGlobalStyle('.box .box-header h4, .box .box-header h5{ padding-top: 8px !important; }');
 
     }
-    
-    //Search
-    
+
     if (url.includes("scratch.mit.edu/search")) {
 
         addGlobalStyle('.outer #projectBox{ background-color: #253142; !important; }');
@@ -171,14 +171,8 @@
         addGlobalStyle('.grid .thumbnail{ background-color: #2c3c53; !important; }');
 
     }
-     //Parents
 
-    if(url.includes("scratch.mit.edu/parents")) {
-       addGlobalStyle('#faq, .faq-banner {background-color:#253142!important}')
-    }
-    
-    
-    if (url.includes("scratch.mit.edu/users") || url.includes("scratch.mit.edu/mystuff") || url.includes("scratch.mit.edu/studios") || url.includes("scratch.mit.edu/cloudmonitor") || url.includes("scratch.mit.edu/discuss")) {
+    if (url.includes("scratch.mit.edu/users") || url.includes("scratch.mit.edu/statistics") || url.includes("scratch.mit.edu/mystuff") || url.includes("scratch.mit.edu/studios") || url.includes("scratch.mit.edu/cloudmonitor") || url.includes("scratch.mit.edu/discuss")) {
 
         addGlobalStyle('#topnav, .banner, #topnav .innerwrap{ display: block; position: fixed; top: 0; left: 0; z-index: 10; border-bottom: 1px solid rgba(0, 0, 0, 0.1); box-shadow: 0 0 3px rgba(0, 0, 0, 0.25); background-color: #19283c; width: 100%; height: 50px; }');
         addGlobalStyle('#topnav .logo span{ background-image: url(https://scratch.mit.edu/images/logo_sm.png); display: block; margin: 0 6px 0 0; border: 0; background-repeat: no-repeat; background-position: center center; background-size: 95%; width: 81px; height: 50px !important; }');
@@ -190,7 +184,7 @@
         if (!url.includes("mystuff")) {
 
             addGlobalStyle('.empty-field, #profile-data .footer, #profile-box .doing, .box .box-head, .box, .box .box-content, .box .box-content .inner{ background-color: #31425b; border: none; border-radius: 10px }');
-            addGlobalStyle('.blockpost div.box, .postfootleft p, .postfootright ul, .postfootright div, .blockpost .box-content, .postfootright, .postright, .postleft, .postfootleft, .blockpost label{ background-color: #31425b !important; border: none; }');
+            addGlobalStyle('.blockpost div.box, .postfootleft p, .postfootright ul, .postfootright div, .blockpost .box-content, .postfootright, .postright, .postleft, .postfootleft, .blockpost label, .djangobb th, .tc2, .tc3{ background-color: #31425b !important; border: none; }');
 
         } else {
 
@@ -234,6 +228,9 @@
         addGlobalStyle('.table-striped tbody > tr:nth-child(2n+1) > td, .table-striped tbody > tr:nth-child(2n+1) > th, .notification-feed li{ background-color: #253142; margin-bottom: 10px; border-radius: 10px;;}');
         addGlobalStyle('select{ color: black !important;}')
         addGlobalStyle('.djangobb blockquote{ background: #465975; border-radius: 10px;}')
+        addGlobalStyle('.editable:hover, .editable.write, #comments .comment form textarea{ background: #465975 !important; border-radius: 10px; border: none !important; padding: 5px;}')
+        addGlobalStyle('.editable textarea, span.small-text{ background: transparent !important;}');
+        addGlobalStyle('.studio-selector-button{ background: #162a44 !important;}');
 
     }
 
