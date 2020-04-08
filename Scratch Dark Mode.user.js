@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Scratch Dark Mode
 // @namespace    http://tampermonkey.net/
-// @version      0.9.4
+// @version      1.0
 // @description  Gives the Scratch user interface a dark theme.
 // @author       MiniCoder11 & VFDan (This version's scripting was written by MiniCoder11)
 // @match        https://scratch.mit.edu/*
@@ -108,12 +108,12 @@
     addGlobalStyle('#footer{ background-color: #212c3c !important; }'); //Footer
     addGlobalStyle('#navigation, .ttt-modal-header, .modal-content, .stage-header_stage-header-wrapper-overlay_5vfJa, .menu-bar_menu-bar_JcuHF, .modal_header_1h7ps{ background-color: #19283c !important; }');
     addGlobalStyle('body{ text-shadow: none !important; }'); //Removes text shadow for dark theme
-    addGlobalStyle('*{ transition: all 0.25s !important; }');
+    addGlobalStyle('*{ transition: color 0.25s, background-color 0.25s, background 0.25s, width 0.25s, height 0.25s; box-shadow 0.25s; background-size 0.25s !important; }');
     addGlobalStyle('.about .body{ background: #344562; border: none;}');
     addGlobalStyle('h1, h2, h3, h4, h5, h6, p{ color: #f1f1f1;}');
     addGlobalStyle('.modal-overlay{ background-color: #070c12de;}');
     addGlobalStyle('.ttt-tile{ background-color: #2c3c53;}');
-    addGlobalStyle('.dropdown, .dropdown.with-arrow::before{ background-color: #19283c !important; }');
+    addGlobalStyle('#topnav ul.account-nav .logged-in-user .dropdown-menu, .dropdown, .dropdown.with-arrow::before{ box-shadow: none; background-color: #19283c !important; }');
 
     if (url == "https://scratch.mit.edu" || url == "https://scratch.mit.edu/") {
 
@@ -167,8 +167,64 @@
         addGlobalStyle('.tabs, .tab-background{ background-color: #31425b; !important; }');
         addGlobalStyle('.tabs li:hover{ background-color: #2c3c53; !important; }');
         addGlobalStyle('.grid .thumbnail{ background-color: #2c3c53; !important; }');
-        document.querySelector('.select select').style = 'background-color: #19283c';
-        addGlobalStyle('option {background-color: #253142!important}');
+
+    }
+
+    if (url.includes("scratch.mit.edu/users") || url.includes("scratch.mit.edu/mystuff") || url.includes("scratch.mit.edu/studios") || url.includes("scratch.mit.edu/cloudmonitor")) {
+
+        addGlobalStyle('#topnav, .banner, #topnav .innerwrap{ display: block; position: fixed; top: 0; left: 0; z-index: 10; border-bottom: 1px solid rgba(0, 0, 0, 0.1); box-shadow: 0 0 3px rgba(0, 0, 0, 0.25); background-color: #19283c; width: 100%; height: 50px; }');
+        addGlobalStyle('#topnav .logo span{ background-image: url(https://scratch.mit.edu/images/logo_sm.png); display: block; margin: 0 6px 0 0; border: 0; background-repeat: no-repeat; background-position: center center; background-size: 95%; width: 81px; height: 50px !important; }');
+        addGlobalStyle('#topnav ul.account-nav .messages .messages-icon{ background-image: url("/images/nav-notifications.png"); background-size: 50%; display: block; width: 42px; height: 35px; padding: 0; position: relative !important; }');
+        addGlobalStyle('#topnav ul.account-nav .my-stuff .mystuff-icon{ background-image: url("https://scratch.mit.edu/images/mystuff.png"); background-size: 50%; display: block; width: 42px; height: 35px; padding: 0; position: relative !important; }');
+
+        addGlobalStyle('html, body{ background-image: none; background-color: #253142 }');
+
+        if (!url.includes("mystuff")) {
+
+            addGlobalStyle('.empty-field, #profile-data .footer, #profile-box .doing, .box .box-head, .box, .box .box-content, .box .box-content .inner{ background-color: #31425b; border: none; border-radius: 10px }');
+
+        } else {
+
+            addGlobalStyle('.empty-field, #profile-data .footer, #profile-box .doing, .box .box-head, .box, .box .box-content, .box .box-content .inner{ box-shadow: none; background-color: transparent; border: none; border-radius: 10px; }');
+
+        }
+
+        addGlobalStyle('#profile-box #bio textarea, #profile-box #status textarea, #profile-box #bio p, #profile-box #status p, #profile-box, .header-text .profile-details, html, body, div, h1, h2, h3, h4, h5, h6, p{ color: #f1f1f1 }');
+        addGlobalStyle('.arrow-left{ background-image: url("https://scratch.mit.edu/svgs/carousel/prev_ui-dark-gray.svg"); background-repeat: no-repeat; background-position: center; background-size: 80%; background-color: transparent; color: transparent; }');
+        addGlobalStyle('.arrow-right{ background-image: url("https://scratch.mit.edu/svgs/carousel/next_ui-dark-gray.svg"); background-repeat: no-repeat; background-position: center; background-size: 80%; background-color: transparent; color: transparent; }');
+
+        addGlobalStyle('.slider-carousel.horizontal .slider-carousel-control{ color: transparent }');
+        addGlobalStyle('*{ color: #f1f1f1; border: none; box-shadow: none; text-shadow: none; }');
+        addGlobalStyle('#profile-box .player{ border: none; border-radius: 10px; background-color: #3a5173 }');
+        addGlobalStyle('.slider-carousel .thumb img, img{ border-radius: 10px; border: none; background-color: transparent; }');
+        addGlobalStyle('.box{ margin-top: 15px; }');
+        addGlobalStyle('.box-head{ padding: 18px 20px 0px 20px; }');
+        addGlobalStyle('.media-item-content .media-thumb{ background-color: #475f8482; border-radius: 10px; }');
+        addGlobalStyle('#comments .highlighted{ background-color: #f9f9f93d; border-radius: 10px;}');
+        addGlobalStyle('#comments .comment .info .name a{ color: #f1f1f1;}');
+
+        addGlobalStyle('#topnav form.search input, #topnav form.search input[type="text"]{ display: inline-block; margin-top: 5px; outline: none; border: 0; background-color: rgba(0, 0, 0, 0.1); height: 14px; }');
+
+        addGlobalStyle('*{ font-family: helvetica, arial, sans-serif }');
+        addGlobalStyle('*{ border: none !important; }');
+        addGlobalStyle('#topnav ul.site-nav li a{ height: 50px; padding: 6.5px 15px; }');
+        addGlobalStyle('#topnav ul.account-nav .logged-in-user .dropdown-toggle{ padding-top: 7.5px }');
+        addGlobalStyle('#topnav ul.account-nav .my-stuff .mystuff-icon{ padding-top: 16px }');
+        addGlobalStyle('#topnav ul.account-nav .messages .messages-icon{ padding-top: 16px }');
+        addGlobalStyle('#topnav ul.account-nav .logged-in-user .dropdown-menu, .dropdown, .dropdown.with-arrow::before{ margin-top: 25px }');
+        addGlobalStyle('#comments .comment{ background-color: #262f3c52; border-radius: 10px; padding: 10px; margin: 10px; }');
+        addGlobalStyle('#comments #comment-form textarea{ margin: 0; padding: 10px; font-size: 1.1em; background-color: #323c4c; border-radius: 10px; box-shadow: none; color: #f1f1f1; }');
+        addGlobalStyle('#comments #comment-form textarea:focus{ box-shadow: #2a3a51 0px 0px 0px 4px }');
+        addGlobalStyle('.media-item-content{ padding: 10px 15px; position: relative; height: 83px; margin: 10px; background-color: #19212d; border-radius: 10px; }');
+        addGlobalStyle('.box .box-content .action-bar.white .inner, .box .box-content .action-bar .inner{ background-color: transparent;}');
+        addGlobalStyle('#comments .more-replies{ background-color: #31425b; box-shadow: 0 -25px 20px -10px #31425b;}');
+        addGlobalStyle('.modal, .modal-footer{ background-color: #3e556d;}');
+        addGlobalStyle('input, textarea, select{ color: #f1f1f1;}');
+        addGlobalStyle('#footer{ box-shadow: none;}');
+        addGlobalStyle('#explore-bar #explore-header, ul.curators li, #explore-bar #related-projects{ background: #253142 !important; border-radius: 10px;}');
+        addGlobalStyle('.table-striped tbody > tr:nth-child(2n+1) > td, .table-striped tbody > tr:nth-child(2n+1) > th, .notification-feed li{ background-color: #253142; margin-bottom: 10px; border-radius: 10px;;}');
+        addGlobalStyle('select{ color: black !important;}')
+
     }
 
 })();
