@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Scratch Dark Mode
 // @namespace    http://tampermonkey.net/
-// @version      1.0.4
+// @version      1.0.6
 // @description  Gives the Scratch user interface a dark theme.
 // @author       MiniCoder11 & VFDan (This version's scripting was written by MiniCoder11)
 // @match        https://scratch.mit.edu/*
@@ -228,9 +228,11 @@
         addGlobalStyle('.table-striped tbody > tr:nth-child(2n+1) > td, .table-striped tbody > tr:nth-child(2n+1) > th, .notification-feed li{ background-color: #253142; margin-bottom: 10px; border-radius: 10px;;}');
         addGlobalStyle('select{ color: black !important;}')
         addGlobalStyle('.djangobb blockquote{ background: #465975; border-radius: 10px;}')
-        addGlobalStyle('.editable:hover, .editable.write, #comments .comment form textarea{ background: #465975 !important; border-radius: 10px; border: none !important; padding: 5px;}')
+        addGlobalStyle('.djangobb .markItUpEditor, .editable:hover, .editable.write, #comments .comment form textarea{ background: #465975 !important; border-radius: 10px; border: none !important; padding: 5px;}')
         addGlobalStyle('.editable textarea, span.small-text{ background: transparent !important;}');
         addGlobalStyle('.studio-selector-button{ background: #162a44 !important;}');
+        addGlobalStyle('.postleft{ padding-right: 100% !important;}');
+        addGlobalStyle('.blockpost div.box, .postfootleft p, .postfootright ul, .postfootright div, .blockpost .box-content, .postfootright, .postright, .postleft, .postfootleft, .blockpost label, .djangobb th, .tc2, .tc3{ box-shadow: none !important;}');
 
     }
 
