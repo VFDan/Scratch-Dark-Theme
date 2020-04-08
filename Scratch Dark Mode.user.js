@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Scratch Dark Mode
 // @namespace    http://tampermonkey.net/
-// @version      1.0
+// @version      1.0.1
 // @description  Gives the Scratch user interface a dark theme.
 // @author       MiniCoder11 & VFDan (This version's scripting was written by MiniCoder11)
 // @match        https://scratch.mit.edu/*
@@ -141,7 +141,9 @@
         addGlobalStyle('.box .box-header h4, .box .box-header h5{ padding-top: 8px !important; }');
 
     }
-
+    
+    //Search
+    
     if (url.includes("scratch.mit.edu/search")) {
 
         addGlobalStyle('.outer #projectBox{ background-color: #253142; !important; }');
@@ -169,7 +171,13 @@
         addGlobalStyle('.grid .thumbnail{ background-color: #2c3c53; !important; }');
 
     }
+     //Parents
 
+    if(url.includes("scratch.mit.edu/parents")) {
+       addGlobalStyle('#faq, .faq-banner {background-color:#253142!important}')
+    }
+    
+    
     if (url.includes("scratch.mit.edu/users") || url.includes("scratch.mit.edu/mystuff") || url.includes("scratch.mit.edu/studios") || url.includes("scratch.mit.edu/cloudmonitor") || url.includes("scratch.mit.edu/discuss")) {
 
         addGlobalStyle('#topnav, .banner, #topnav .innerwrap{ display: block; position: fixed; top: 0; left: 0; z-index: 10; border-bottom: 1px solid rgba(0, 0, 0, 0.1); box-shadow: 0 0 3px rgba(0, 0, 0, 0.25); background-color: #19283c; width: 100%; height: 50px; }');
