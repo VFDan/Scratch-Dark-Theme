@@ -2,13 +2,10 @@
 
 Scratch Dark Theme gives the Scratch 3.0 user interface a refresh with a dark theme and new modern look.
 
-Supported pages so far:
-  * scratch.mit.edu
-  * scratch.mit.edu/messages
-  * scratch.mit.edu/explore
-  * scratch.mit.edu/search
-  * scratch.mit.edu/projects
-  * scratch.mit.edu/editor
+This is automatically turned off on private pages. These pages are the account creation page and the account management page.
+
+This also applies the new 3.0 style to the navigation bar on all pages.
+
 ___
 ## Credits:
 
