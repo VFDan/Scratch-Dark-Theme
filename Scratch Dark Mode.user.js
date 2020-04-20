@@ -117,7 +117,6 @@
     addGlobalStyle('.parents .title-banner.masthead, .developers .title-banner.masthead{ background-color: #2e3d51 !important; }');
     addGlobalStyle('.djangobb table, .djangobb input, .djangobb select, .djangobb optgroup, .djangobb textarea, .postmsg .postedit{ background-color: #2e3d51 !important; border-radius: 10px;}');
 
-    addGlobalStyle('.button > span, button > span, .button > a, button > a{ background: #212b3a; border-radius: 10px;}');
     addGlobalStyle('.button.small, button.small{ background: transparent !important; box-shadow: none;}');
 
     if (url == "https://scratch.mit.edu" || url == "https://scratch.mit.edu/") {
@@ -191,6 +190,7 @@
 
         } else {
 
+            addGlobalStyle('.button > span, button > span, .button > a, button > a{ background: #212b3a; border-radius: 10px;}');
             addGlobalStyle('.empty-field, #profile-data .footer, #profile-box .doing, .box .box-head, .box, .box .box-content, .box .box-content .inner{ box-shadow: none; background-color: transparent; border: none; border-radius: 10px; }');
 
         }
