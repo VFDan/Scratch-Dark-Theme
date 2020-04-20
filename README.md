@@ -6,7 +6,6 @@ This is automatically turned off on private pages. These pages are the account c
 
 This also applies the new 3.0 style to the navigation bar on all pages.
 
-___
 ## Credits:
 
 Thanks to Scratch user **44D3A7HQ** for the `addGlobalStyle` function and inspiration for the color scheme. They are not a member of the official development team but their work is greatly appreciated.
