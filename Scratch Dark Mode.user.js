@@ -93,7 +93,6 @@
         addGlobalStyle('.comment .comment-body .comment-bubble{ background-color: #2a364d !important; }');
         addGlobalStyle('.comment .comment-body .comment-bubble::before{ background-color: #2a364d !important; }');
         addGlobalStyle('.comment .comment-body .comment-bubble{ color: #cdcdcd !important; }');
-        //addGlobalStyle('.preview .project-lower-container{ background-color: # !important; }');
         addGlobalStyle('.preview .comments-header{ color: #cdcdcd !important; }');
         addGlobalStyle('.preview .comments-header h4{ color: #cdcdcd !important; }');
         addGlobalStyle('.compose-comment .compose-bottom-row .compose-limit{ color: #cdcdcd !important; }');
@@ -116,6 +115,10 @@
     addGlobalStyle('#topnav ul.account-nav .logged-in-user .dropdown-menu, .dropdown, .dropdown.with-arrow::before{ box-shadow: none; background-color: #19283c !important; }');
     addGlobalStyle('.credits .supporters, .parents .title-banner.faq-banner, .developers .title-banner.faq-banner{ background-color: #2b3a4f !important; }');
     addGlobalStyle('.parents .title-banner.masthead, .developers .title-banner.masthead{ background-color: #2e3d51 !important; }');
+    addGlobalStyle('.djangobb table, .djangobb input, .djangobb select, .djangobb optgroup, .djangobb textarea, .postmsg .postedit{ background-color: #2e3d51 !important; border-radius: 10px;}');
+
+    addGlobalStyle('.button > span, button > span, .button > a, button > a{ background: #212b3a; border-radius: 10px;}');
+    addGlobalStyle('.button.small, button.small{ background: transparent !important; box-shadow: none;}');
 
     if (url == "https://scratch.mit.edu" || url == "https://scratch.mit.edu/") {
 
@@ -233,6 +236,11 @@
         addGlobalStyle('.studio-selector-button{ background: #162a44 !important;}');
         addGlobalStyle('.postleft{ padding-right: 100% !important;}');
         addGlobalStyle('.blockpost div.box, .postfootleft p, .postfootright ul, .postfootright div, .blockpost .box-content, .postfootright, .postright, .postleft, .postfootleft, .blockpost label, .djangobb th, .tc2, .tc3{ box-shadow: none !important;}');
+
+        addGlobalStyle('.v-tabs ul{ padding-top: 112px; padding-right: 20px }');
+        addGlobalStyle('.v-tabs li.active, .v-tabs li.active a{ border-radius: 10px; background-color: #1b2431 !important; text-shadow: none; }');
+        addGlobalStyle('.v-tabs li, .v-tabs li.active{ margin: 10px; border-radius: 10px; background-color: #1F2A3A !important;}');
+        addGlobalStyle('.tabs-index li:hover a{ border-radius: 10px; background-color: #304157 !important;}');
 
     }
 
