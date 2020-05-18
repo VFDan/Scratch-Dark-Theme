@@ -1,13 +1,14 @@
 // ==UserScript==
 // @name         Scratch Dark Mode
 // @namespace    http://tampermonkey.net/
-// @version      1.0.6
+// @version      1.1.2
 // @description  Gives the Scratch user interface a dark theme.
 // @author       MiniCoder11 & VFDan (This version's scripting was written by MiniCoder11)
 // @match        https://scratch.mit.edu/*
 // @exclude      https://scratch.mit.edu/join
 // @exclude      https://scratch.mit.edu/accounts/*
 // @grant        none
+// @run-at       document-end
 // ==/UserScript==
 
 //Thanks to Scratch user 44D3A7HQ for the code off which we have based the main editor color scheme and styling. Their previous work is greatly appreciated.
@@ -29,6 +30,8 @@
     if (url.includes("scratch.mit.edu/projects") && url.includes("editor")) {
 
         //Editor
+
+        addGlobalStyle('.blocklyScrollbarHandle{ fill: #6481AA !important; }');
 
         addGlobalStyle('.gui_body-wrapper_-N0sA{ background-color: #121e2d !important; }');
         addGlobalStyle('.backpack_backpack-item_hwqzQ > div{ background-color: #2136518f !important; }');
@@ -61,6 +64,7 @@
 
         addGlobalStyle('.gui_tab_27Unf.gui_is-selected_sHAiu { background-color: #254061 !important; }');
         addGlobalStyle('.gui_tab_27Unf { background-color: #1c3048;!important; }');
+        addGlobalStyle('.gui_tab_27Unf:hover { background-color: #293f5d;!important; }');
         addGlobalStyle('.selector_new-buttons_2qHDd::before { background: linear-gradient(#fff0, #121e2d); }');
 
         addGlobalStyle('.blocklyWidgetDiv .goog-menuitem-highlight, .blocklyWidgetDiv .goog-menuitem-hover { background-color: #254061 !important; }');
@@ -116,6 +120,13 @@
     addGlobalStyle('.credits .supporters, .parents .title-banner.faq-banner, .developers .title-banner.faq-banner{ background-color: #2b3a4f !important; }');
     addGlobalStyle('.parents .title-banner.masthead, .developers .title-banner.masthead{ background-color: #2e3d51 !important; }');
     addGlobalStyle('.djangobb table, .djangobb input, .djangobb select, .djangobb optgroup, .djangobb textarea, .postmsg .postedit{ background-color: #2e3d51 !important; border-radius: 10px;}');
+    addGlobalStyle('.nvtooltip{ background-color: #253142; border-radius: 10px;}');
+    addGlobalStyle('.h-tabs > li.active{ background-color: #31425b; border-radius: 10px;}');
+    addGlobalStyle('.iframeshim, .jqui-modal.ui-widget { background-color: #31425b; border-radius: 10px;}');
+    addGlobalStyle('.ui-button .ui-button-text { color: black; border-radius: 10px;}');
+    addGlobalStyle('.djangobb blockquote, .code { background-color: #31425b; border-radius:10px; }');
+    addGlobalStyle('#topnav ul.account-nav .logged-in-user .dropdown-toggle { background-color: #31425b; }');
+    addGlobalStyle('a.black, a.black:visited, input.link.black { color: #f1f1f1; }');
 
     addGlobalStyle('.button.small, button.small{ background: transparent !important; box-shadow: none;}');
 
@@ -151,7 +162,7 @@
         addGlobalStyle('.outer #projectBox{ background-color: #253142; !important; }');
         addGlobalStyle('.outer .tab-background{ background-color: #31425b; !important; }');
         addGlobalStyle('.tabs{ background-color: #31425b; !important; }');
-        addGlobalStyle('.tabs li:hover{ background-color: #2c3c53; !important; }');
+        addGlobalStyle('.tabs li:hover, .tabs-index li{ background-color: #2c3c53; !important; }');
         addGlobalStyle('.grid .thumbnail{ background-color: #2c3c53; !important; }');
         addGlobalStyle('.outer .title-banner.masthead{ background-color: #354864; !important; }');
 
@@ -171,6 +182,21 @@
         addGlobalStyle('.tabs, .tab-background{ background-color: #31425b; !important; }');
         addGlobalStyle('.tabs li:hover{ background-color: #2c3c53; !important; }');
         addGlobalStyle('.grid .thumbnail{ background-color: #2c3c53; !important; }');
+
+    }
+
+    if (url.includes("scratch.mit.edu/studios") && url.includes("comments")) {
+
+        addGlobalStyle('.button.small, button.small { background-color: #2d3c51 !important; border-radius: 2px; }');
+
+    }
+
+    if (url.includes("scratch.mit.edu/community_guidelines")) {
+
+        addGlobalStyle('.box .box-content, .box .box-header{ background-color: #19283c !important; border-radius: 10px; }');
+        addGlobalStyle('*{ border: none !important; }');
+        addGlobalStyle('html, body{ color: #c6c6c6 !important; }');
+        addGlobalStyle('.box{ background: transparent !important; }');
 
     }
 
