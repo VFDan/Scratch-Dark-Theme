@@ -41,6 +41,8 @@
 
             addGlobalStyle('.blocklyScrollbarHandle{ fill: #6481AA !important; }');
 
+            addGlobalStyle('.valueReportBox{ color: #515151 !important; }');
+
             addGlobalStyle('.monitor_monitor-container_2J9gl, .scratchCommentTextarea{ color: #575757; }');
 
             addGlobalStyle('.gui_body-wrapper_-N0sA{ background-color: #121e2d !important; }');
