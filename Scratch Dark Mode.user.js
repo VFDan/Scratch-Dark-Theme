@@ -25,12 +25,6 @@
         head.appendChild(style);
     }
 
-    //window.addEventListener('popstate', function (event) {
-    //    alert("Hello!")
-    //    reapplyStyling()
-    //});
-
-
     function reapplyStyling() {
 
         var url = window.location.href
@@ -141,6 +135,7 @@
         addGlobalStyle('a.black, a.black:visited, input.link.black { color: #f1f1f1; }');
 
         addGlobalStyle('.button.small, button.small{ background: transparent !important; box-shadow: none;}');
+        addGlobalStyle('.info-tooltip{ background-color: #253142;}');
 
         if (url == "https://scratch.mit.edu" || url == "https://scratch.mit.edu/") {
 
