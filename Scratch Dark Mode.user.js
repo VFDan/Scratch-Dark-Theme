@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Scratch Dark Mode
 // @namespace    http://tampermonkey.net/
-// @version      1.3.0
+// @version      1.3.2
 // @description  Gives the Scratch user interface a dark theme.
 // @author       MiniCoder11 & VFDan
 // @match        https://scratch.mit.edu/*
@@ -15,6 +15,7 @@
 
 (function() {
     'use strict';
+
     function reapplyStyling() {
 
         var url = window.location.href
@@ -197,14 +198,19 @@
 
         }
 
-        if (url.includes("scratch.mit.edu/users") || url.includes("scratch.mit.edu/statistics") || url.includes("scratch.mit.edu/mystuff") || url.includes("scratch.mit.edu/studios") || url.includes("scratch.mit.edu/cloudmonitor") || url.includes("scratch.mit.edu/discuss")) {
+        if (url.includes("scratch.mit.edu/users") || url.includes("scratch.mit.edu/accounts") || url.includes("scratch.mit.edu/statistics") || url.includes("scratch.mit.edu/mystuff") || url.includes("scratch.mit.edu/studios") || url.includes("scratch.mit.edu/cloudmonitor") || url.includes("scratch.mit.edu/discuss")) {
 
             GM_addStyle('#topnav, .banner, #topnav .innerwrap{ display: block; position: fixed; top: 0; left: 0; z-index: 10; border-bottom: 1px solid rgba(0, 0, 0, 0.1); box-shadow: 0 0 3px rgba(0, 0, 0, 0.25); background-color: #19283c; width: 100%; height: 50px; }');
             GM_addStyle('#topnav .logo span{ background-image: url(https://scratch.mit.edu/images/logo_sm.png); display: block; margin: 0 6px 0 0; border: 0; background-repeat: no-repeat; background-position: center center; background-size: 95%; width: 81px; height: 50px !important; }');
             GM_addStyle('#topnav ul.account-nav .messages .messages-icon{ background-image: url("/images/nav-notifications.png"); background-size: 50%; display: block; width: 42px; height: 35px; padding: 0; position: relative !important; }');
             GM_addStyle('#topnav ul.account-nav .my-stuff .mystuff-icon{ background-image: url("https://scratch.mit.edu/images/mystuff.png"); background-size: 50%; display: block; width: 42px; height: 35px; padding: 0; position: relative !important; }');
 
+            GM_addStyle('.button.grey, button{ background-image: none; }');
+            GM_addStyle('#topnav ul.account-nav .logged-in-user .dropdown-menu, .dropdown, .dropdown.with-arrow::before{ background-color: #31425b !important; }');
+
             GM_addStyle('html, body{ background-image: none; background-color: #253142 }');
+            GM_addStyle('input, textarea, select, #topnav ul.account-nav .sign-in form input{ color: #464646; }');
+            GM_addStyle('#topnav ul.account-nav .sign-in .popover, #topnav ul.account-nav .sign-in .popover .arrow::after{ background-color: #415573; }');
 
             if (!url.includes("mystuff")) {
 
