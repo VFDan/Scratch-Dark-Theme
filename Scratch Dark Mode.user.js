@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Scratch Dark Mode
 // @namespace    http://tampermonkey.net/
-// @version      1.3.2
+// @version      1.3.3
 // @description  Gives the Scratch user interface a dark theme.
 // @author       MiniCoder11 & VFDan
 // @match        https://scratch.mit.edu/*
@@ -29,6 +29,10 @@
             //Compatibility with Griffpatch's Scratch Tools
             GM_addStyle('div.s3devDDOut.vis{ background-color:  !important; }');
             GM_addStyle('.s3devInp:hover{ background-color: #254061 !important; }');
+            GM_addStyle('#s3devHelpPop > div{ background-color: #283748; border-radius: 10px !important; }');
+
+            GM_addStyle('.custom-procedures_body_SQBv6{ background-color: #18293e !important; }');
+            GM_addStyle('.custom-procedures_option-card_BtHt3{ background-color: #122134 !important; }');
 
             GM_addStyle('.valueReportBox{ color: #515151 !important; }');
 
