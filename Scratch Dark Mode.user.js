@@ -26,6 +26,10 @@
 
             GM_addStyle('.blocklyScrollbarHandle{ fill: #6481AA !important; }');
 
+            //Compatibility with Griffpatch's Scratch Tools
+            GM_addStyle('div.s3devDDOut.vis{ background-color:  !important; }');
+            GM_addStyle('.s3devInp:hover{ background-color: #254061 !important; }');
+
             GM_addStyle('.valueReportBox{ color: #515151 !important; }');
 
             GM_addStyle('.monitor_monitor-container_2J9gl, .scratchCommentTextarea{ color: #575757; }');
