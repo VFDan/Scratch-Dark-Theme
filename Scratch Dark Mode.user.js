@@ -1,13 +1,13 @@
 // ==UserScript==
 // @name         Scratch Dark Mode
 // @namespace    http://tampermonkey.net/
-// @version      1.4.2
+// @version      1.4.4
 // @description  Gives the Scratch user interface a dark theme.
 // @author       MiniCoder11 & VFDan
 // @match        https://scratch.mit.edu/*
 // @exclude      https://scratch.mit.edu/join
 // @exclude      https://scratch.mit.edu/accounts/*
-// @updateURL    https://github.com/VFDan/Scratch-Dark-Theme/raw/master/Scratch%20Dark%20Mode.user.js\
+// @updateURL    https://github.com/VFDan/Scratch-Dark-Theme/raw/master/Scratch%20Dark%20Mode.user.js
 // @downloadURL  https://github.com/VFDan/Scratch-Dark-Theme/raw/master/Scratch%20Dark%20Mode.user.js
 // @grant        GM_addStyle
 // @run-at       document-end
@@ -30,9 +30,9 @@
             GM_addStyle('.blocklyScrollbarHandle{ fill: #6481AA !important; }');
 
             //Compatibility with Griffpatch's Scratch Tools
-            GM_addStyle('div.s3devDDOut.vis{ background-color:  !important; }');
+            GM_addStyle('div.s3devDDOut.vis{ background-color: #1e334c !important; }');
             GM_addStyle('.s3devInp:hover{ background-color: #254061 !important; }');
-            GM_addStyle('#s3devHelpPop > div{ background-color: #283748; border-radius: 10px !important; }');
+            GM_addStyle('#s3devHelpPop > div{ background-color: #283748 !important; border-radius: 10px !important; }');
 
             GM_addStyle('.custom-procedures_body_SQBv6{ background-color: #18293e !important; }');
             GM_addStyle('.custom-procedures_option-card_BtHt3{ background-color: #122134 !important; }');
