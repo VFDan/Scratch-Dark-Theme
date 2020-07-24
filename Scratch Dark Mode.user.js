@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Scratch Dark Mode
 // @namespace    http://tampermonkey.net/
-// @version      1.4.0
+// @version      1.4.1
 // @description  Gives the Scratch user interface a dark theme.
 // @author       MiniCoder11 & VFDan
 // @match        https://scratch.mit.edu/*
@@ -10,6 +10,7 @@
 // @updateURL    https://github.com/VFDan/Scratch-Dark-Theme/raw/master/Scratch%20Dark%20Mode.user.js
 // @grant        GM_addStyle
 // @run-at       document-end
+// @icon         https://raw.githubusercontent.com/VFDan/Scratch-Dark-Theme/master/icon.png
 // ==/UserScript==
 
 //Thanks to Scratch user 44D3A7HQ for the code off which we have based the main editor color scheme and styling. Their previous work is greatly appreciated.
