@@ -8,7 +8,7 @@
 // @exclude      https://scratch.mit.edu/join
 // @exclude      https://scratch.mit.edu/accounts/*
 // @updateURL    https://github.com/VFDan/Scratch-Dark-Theme/raw/master/Scratch%20Dark%20Mode.user.js\
-// @downloadURL    https://github.com/VFDan/Scratch-Dark-Theme/raw/master/Scratch%20Dark%20Mode.user.js
+// @downloadURL  https://github.com/VFDan/Scratch-Dark-Theme/raw/master/Scratch%20Dark%20Mode.user.js
 // @grant        GM_addStyle
 // @run-at       document-end
 // @icon         https://raw.githubusercontent.com/VFDan/Scratch-Dark-Theme/master/icon.png
