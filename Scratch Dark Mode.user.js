@@ -1,12 +1,13 @@
 // ==UserScript==
 // @name         Scratch Dark Mode
 // @namespace    http://tampermonkey.net/
-// @version      1.3.3
+// @version      1.4.0
 // @description  Gives the Scratch user interface a dark theme.
 // @author       MiniCoder11 & VFDan
 // @match        https://scratch.mit.edu/*
 // @exclude      https://scratch.mit.edu/join
 // @exclude      https://scratch.mit.edu/accounts/*
+// @updateURL    https://github.com/VFDan/Scratch-Dark-Theme/raw/master/Scratch%20Dark%20Mode.user.js
 // @grant        GM_addStyle
 // @run-at       document-end
 // ==/UserScript==
