@@ -1,0 +1,25 @@
+{|
+|-
+|✔️ 
+|Complete Support
+|-
+|➖
+|Partial Support
+|-
+|❓
+|Unknown Support
+|-
+|❌
+|No Support
+|}
+{| class="wikitable"
+|-
+|[https://github.com/griffpatch/Scratch3-Dev-Tools Scratch3 Dev Tools - griffpatch]
+|✔️
+|-
+|[https://github.com/JeffaloBob/scratch-image-uploader Scratch Image Uploader - JeffaloBob]
+|✔️
+|-
+|[https://github.com/mxmou/customize-scratch/blob/master/scratchr2.user.css Scratchr2 - mxmou]
+|❌
+|}
