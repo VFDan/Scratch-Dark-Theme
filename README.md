@@ -4,7 +4,7 @@ Scratch Dark Theme gives the Scratch 3.0 user interface a refresh with a dark th
 
 This is automatically turned off on private pages such as the account creation page and the account management page to protect your privacy. This also applies the new 3.0 style to the navigation bar on all pages.
 
-Scratch Dark Theme is now completely compatible with [Griffpatch's DevTools extension](https://github.com/griffpatch/Scratch3-Dev-Tools)!
+Check out the [Compatibility List](https://github.com/VFDan/Scratch-Dark-Theme/wiki/Compatibility-List) to see what this extension currently supports.
 
 ## Credits:
 
