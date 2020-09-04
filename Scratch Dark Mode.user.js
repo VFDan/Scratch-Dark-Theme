@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Scratch Dark Mode
 // @namespace    http://tampermonkey.net/
-// @version      1.4.5
+// @version      1.4.6
 // @description  Gives the Scratch user interface a dark theme.
 // @author       MiniCoder11 & VFDan
 // @match        https://scratch.mit.edu/*
@@ -235,7 +235,7 @@
 
             }
             if (url.includes("discuss")) {
-                GM_addStyle('.blockpost a { color: #2bb1e9!important;}');
+                GM_addStyle('.blockpost .postmsg a { color: #2bb1e9!important;}');
             }
 
             GM_addStyle('#profile-box #bio textarea, #profile-box #status textarea, #profile-box #bio p, #profile-box #status p, #profile-box, .header-text .profile-details, html, body, div, h1, h2, h3, h4, h5, h6, p{ color: #f1f1f1 }');
