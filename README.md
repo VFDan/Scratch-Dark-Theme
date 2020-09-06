@@ -9,7 +9,7 @@ Check out the [Compatibility List](https://github.com/VFDan/Scratch-Dark-Theme/b
 
 ## How to use:
 
-1. Install the Tampermonkey extension (this also works with Greasemonkey).
+1. Install the Tampermonkey extension (this also works with Greasemonkey, but support is not guaranteed).
 2. Go to https://github.com/VFDan/Scratch-Dark-Theme/raw/master/Scratch%20Dark%20Mode.user.js.
 3. Click Install.
 4. Use Scratch in Dark Mode!
