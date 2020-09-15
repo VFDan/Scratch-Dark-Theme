@@ -219,6 +219,8 @@
             GM_addStyle('.button.grey, button{ background-image: none; }');
             GM_addStyle('#topnav ul.account-nav .logged-in-user .dropdown-menu, .dropdown, .dropdown.with-arrow::before{ background-color: #31425b !important; }');
 
+            GM_addStyle('select {background-color: #3b4c64;}');
+
             GM_addStyle('html, body{ background-image: none; background-color: #253142 }');
             GM_addStyle('input, textarea, select, #topnav ul.account-nav .sign-in form input{ color: #464646; }');
             GM_addStyle('#topnav ul.account-nav .sign-in .popover, #topnav ul.account-nav .sign-in .popover .arrow::after{ background-color: #415573; }');
