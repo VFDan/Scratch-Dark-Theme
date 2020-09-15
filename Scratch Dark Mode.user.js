@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Scratch Dark Mode
 // @namespace    http://tampermonkey.net/
-// @version      1.4.6
+// @version      1.4.7
 // @description  Gives the Scratch user interface a dark theme.
 // @author       MiniCoder11 & VFDan
 // @match        https://scratch.mit.edu/*
@@ -218,6 +218,9 @@
 
             GM_addStyle('.button.grey, button{ background-image: none; }');
             GM_addStyle('#topnav ul.account-nav .logged-in-user .dropdown-menu, .dropdown, .dropdown.with-arrow::before{ background-color: #31425b !important; }');
+
+            //Altering iFrame contents should be done here, but has not been added yet.
+            GM_addStyle('.markItUpPreviewFrame{ background-color: #465975 !important; border-radius: 10px !important; }');
 
             GM_addStyle('select {background-color: #3b4c64;}');
 
