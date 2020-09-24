@@ -22,4 +22,7 @@
 |-
 |[https://github.com/mxmou/customize-scratch/blob/master/scratchr2.user.css Scratchr2 - mxmou]
 |❌
+|-
+|[https://turbowarp.org TurboWarp - GarboMuffin]
+|❌
 |}
